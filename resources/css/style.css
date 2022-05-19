@@ -1,18 +1,166 @@
+/* Universal Styles */
+
 html {
-    font-family: Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #020202;
+    width: 100%;
+}
+
+#main-content {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #040404;
+}
+
+.left {
+    text-align: left;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.button {
+    background-color: #040404;
+    color: white;
 }
 
 /* Header */
 
+header {
+    max-height: 64px;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+}
+
+header nav {
+    text-align: right;
+    color: #020202;
+    padding-right: 24px;
+    overflow: hidden;
+    float: right;
+}
+
+header li {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 8px;
+    text-align: right;
+}
+
+header .name {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+header svg {
+    padding-left: 24px;
+}
+
 
 /* Intro Section */
 
+#intro-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: lightgrey;
+
+}
+
+#intro-section .image-container {
+    max-width: 60%;
+    padding: 32px 24px;
+}
+
+#intro-content {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Informational Section */
+
+#info-section {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#info-section .info-main {
+    max-width: 100%;
+}
+
+#info-section .image-container {
+    max-width: 60%;
+    padding: 32px 24px;
+}
+
+#info-section .quote {
+    max-width: 60%;
+    padding: 32px 24px;
+}
+
+#info-section .side-bar {
+    display: flex;
+    position: relative;
+    max-width: 40%;
+    flex-direction: column;
+}
+
+#info-section .side-bar .image-container {
+    max-height: auto;
+    max-width: 35%;
+    padding: 16px;
+    display: flex;
+}
+
+#info-section .side-bar .content {
+    display: inline-block;
+    max-width: 35%;
+    flex-direction: row;
+}
+
 
 
 /* Course Section */
 
+#course-section {
+    padding: 32px 72px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    max-width: 100%;
+}
+
+#course-section .row {
+    display: inline-flex;
+}
+
+#course-section .image-container {
+    flex: 1;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+#course-section .header {
+    text-align: center;
+}
 
 /* Thesis Section */
 
